@@ -1,0 +1,181 @@
+% resume.tex
+%
+% (c) 2002 Matthew Boedicker <mboedick@mboedick.org> (original author) http://mboedick.org
+% (c) 2003 David J. Grant <dgrant@ieee.org> http://www.davidgrant.ca
+% (c) 2007 Todd C. Miller <Todd.Miller@courtesan.com> http://www.courtesan.com/todd
+% (c) 2009-2012 Derek R. Hildreth <derek@derekhildreth.com> http://www.derekhildreth.com 
+%This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike License. To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-sa/1.0/ or send a letter to Creative Commons, 559 Nathan Abbott Way, Stanford, California 94305, USA.
+
+\documentclass[letterpaper,11pt]{article}
+
+%-----------------------------------------------------------
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage[pdftex]{hyperref}
+\hypersetup{
+    colorlinks,%
+    citecolor=black,%
+    filecolor=black,%
+    linkcolor=black,%
+    urlcolor=black
+}
+\urlstyle{same}
+\definecolor{mygrey}{gray}{.9}
+\definecolor{mygreylink}{gray}{.40}
+\textheight=9.0in
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.375in}
+\addtolength{\evensidemargin}{0.375in}
+\addtolength{\textwidth}{0.5in}
+\addtolength{\topmargin}{-.375in}
+\addtolength{\textheight}{0.75in}
+
+%-----------------------------------------------------------
+%Custom commands
+\newcommand{\resitem}[1]{\item #1 \vspace{-2pt}}
+\newcommand{\resheading}[1]{{\large \colorbox{mygrey}{\begin{minipage}{\textwidth}{\textbf{#1 \vphantom{p\^{E}}}}\end{minipage}}}}
+\newcommand{\ressubheading}[4]{
+\begin{tabular*}{6.875in}{l@{\extracolsep{\fill}}r}
+		\textbf{#1} & #2 \\
+		\textit{#3} & \textit{#4} \\
+\end{tabular*}\vspace{-6pt}}
+
+\newcommand{\ressubsubheading}[2]{
+\begin{tabular*}{6.5in}{l@{\extracolsep{\fill}}r}
+		\textit{#1} & \textit{#2} \\
+\end{tabular*}\vspace{-6pt}}
+\renewcommand{\footnotesize}{\fontsize{10pt}{11pt}\selectfont}
+
+
+\begin{document}
+
+\newcommand{\mywebheader}{
+	\begin{tabular*}{7in}{l@{\extracolsep{\fill}}r}
+		\textbf{{\LARGE Akshay Chiwhane}} \\
+			\href{tel:248-278-1152}{Phone: 248-278-1152} |
+			\href{mailto:achiwha@umich.edu}{Email: achiwha@umich.edu} |
+			\href{https://github.com/achiwhane}{Github: achiwhane} |
+			\href{https://linkedin.com/in/achiwhane}{Linkedin: /in/achiwhane}	\end{tabular*}
+		\\
+		\vspace{0.1in}}
+		
+		\mywebheader
+		
+		%%%%%%%%%%%%%%%%%%%%%%
+		\resheading{Education}
+		\begin{description}
+			\item
+			\ressubheading{{University of Michigan}}{Ann Arbor, MI}{B.S.E in Computer Science; GPA:3.426/4.000}{Sept. 2014 -- Dec. 2017}
+			{ \footnotesize
+				\begin{itemize}
+					\resitem{\textbf{Key Courses:}
+						Operating Systems (EECS 482), 
+						Networks (EECS 489),
+						Web Databases \& Information Systems (EECS 485),
+						Machine Learning (EECS 445),
+						Intro to Artificial Intelligence (EECS 492),
+						Data Structures and Algorithms (EECS 281)
+					}
+					\resitem{\textbf{IEEE at the University of Michigan:}} 
+					\begin{itemize}
+						\resitem{Projects Chair - Gained exposure to frontend development by redesigning organization website using Jekyll and GitHub Pages}
+						\resitem{Secretary - Helped plan, organize and communicate workshops and company-sponsored events for students} 
+					\end{itemize}
+					\resitem{\textbf{MHacks Core Team}} 
+					\begin{itemize}
+						\resitem{Backend Developer - Streamlined MHacks 8 registration process by developing REST API in Django to record QR code scans}
+					\end{itemize}
+				\end{itemize}
+			}
+		\end{description} % End Education list
+		
+		%%%%%%%%%%%%%%%%%%%%%%
+		\resheading{Experience}
+		\begin{description}
+			\item 
+			\ressubheading{Deepfield Networks}{Ann Arbor, MI}
+			{Software Engineer Intern}{May 2016 -- Sept. 2016}
+			{	
+				\footnotesize
+				\begin{itemize}
+					\resitem{Improved speed and robustness of critical part of DDoS detection pipeline by architecting, developing, and optimizing DDoS analysis library using Python}
+					\resitem{Gained familiarity with Agile and scrum (Atlassian Jira), test-driven development, and continuous integration methodologies (Jenkins)}
+				\end{itemize}
+			}
+			\item 
+			\ressubheading{Northrop Grumman}{Arlington, VA}
+			{Extern}{May 2015 -- July 2015}
+			{	
+				\footnotesize
+				\begin{itemize}
+					\resitem{Simulated and evaluated packet scheduling schemes for content-centric networks using MATLAB}
+					\resitem{Gained experience with project management and leadership skills through coursework}
+				\end{itemize}
+			}
+			\item 
+			\ressubheading{University of Michigan Information and Technology Services}{Ann Arbor, MI}
+			{Student Technician}{April 2015}
+			{	
+				\footnotesize
+				\begin{itemize}
+					\resitem{Diagnosed and resolved hardware, software, and networking problems with student, faculty, and staff computers brought to the Computer Showcase}
+					\resitem{Upgraded, replaced, and moved computers and printers in the Campus Computing Sites labs}
+				\end{itemize}
+			}
+			
+		\end{description}  % End Experience list
+		
+		%%%%%%%%%%%%%%%%%%%%%%
+		\resheading{Skills}
+		\begin{description}
+			\item[Programming Languages and Technologies:]
+				{	
+					\footnotesize
+					Python, C++, C, Java, Swift, MATLAB, Django, Tornado, Flask, Redis, MySQL, etcd, git, emacs, zsh, \LaTeX
+				}
+			\item[Computer and OS:]
+				{
+					\footnotesize
+					Linux (Red Hat Enterprise Linux, Ubuntu, ArchLinux), OS X, FreeBSD, Microsoft Windows 7/8/10
+				}
+			\item[Languages:]
+				{
+					\footnotesize
+					English (Fluent), Marathi (Fluent)
+				}
+		\end{description} % End Skills list
+		
+		\resheading{Projects}
+		
+		\begin{description}
+			\item[Calculator:] 
+				{
+					\footnotesize
+					A reverse Polish Notation calculator with graphing capabilities for iOS, written in Swift.
+				}
+			\item[ReadHN:] 
+				{
+					\footnotesize
+					A Hacker News client for iOS, developed using Swift, Firebase, and AlamoFire.
+				}
+			\item[PongWithMe:]
+				{
+					\footnotesize
+					A game of pong where players use their phones to control paddles on a screen. Won 1st Place for the Best Use of Microsoft Platforms at MHacks IV.
+				}
+				
+			\item[Sunshine:]
+				{
+					\footnotesize
+					A full-featured weather app for Android, completed as part of the ``Developing for Android''  Udacity course.
+				}
+				
+		\end{description}
+		
+\end{document}
