@@ -58,24 +58,25 @@
 \newcommand{\mywebheader}{
 	\begin{tabular*}{7in}{l@{\extracolsep{\fill}}r}
 		\textbf{{\LARGE Akshay Chiwhane}} \\
-			\href{tel:248-278-1152}{Phone: 248-278-1152} |
-			\href{mailto:achiwha@umich.edu}{Email: achiwha@umich.edu} |
-			\href{https://github.com/achiwhane}{Github: achiwhane} |
-			\href{https://linkedin.com/in/achiwhane}{Linkedin: /in/achiwhane}	\end{tabular*}
+		\href{tel:248-278-1152}{Phone: 248-278-1152} |
+		\href{mailto:achiwha@umich.edu}{Email: achiwha@umich.edu} |
+		\href{https://github.com/achiwhane}{Github: achiwhane} |
+		\href{https://linkedin.com/in/achiwhane}{Linkedin: /in/achiwhane}	\end{tabular*}
 		\\
 		\vspace{0.1in}}
-		
+						
 		\mywebheader
-		
+						
 		%%%%%%%%%%%%%%%%%%%%%%
 		\resheading{Education}
 		\begin{description}
 			\item
-			\ressubheading{{University of Michigan}}{Ann Arbor, MI}{B.S.E in Computer Science; GPA: 3.497/4.000}{September 2014 -- April 2018 (Expected)}
+			\ressubheading{{University of Michigan}}{Ann Arbor, MI}{B.S.E in Computer Science; GPA: 3.46/4.00}{September 2014 -- April 2018}
 			{ \footnotesize
 				\begin{itemize}
 					\resitem{\textbf{Key Courses:}
-						Distributed Systems (Currently Enrolled),
+						System Design in C++,
+						Distributed Systems,
 						Operating Systems, 
 						Networks,
 						Web Databases \& Information Systems,
@@ -83,32 +84,44 @@
 						Artificial Intelligence,
 						Computer Organization,
 						Data Structures and Algorithms,
-						Linear Algebra
+						Linear Algebra,
+						Probability
 					}
-					\resitem{\textbf{IEEE at the University of Michigan:}} 
-					\begin{itemize}
-						\resitem{Projects Chair - Gained exposure to frontend development by redesigning organization website using Jekyll and GitHub Pages}
-						\resitem{Secretary - Helped plan, organize and communicate workshops and company-sponsored events for students} 
-					\end{itemize}
-					\resitem{\textbf{MHacks Core Team}} 
-					\begin{itemize}
-						\resitem{Backend Developer - Streamlined MHacks 8 registration process by developing REST API in Django to record QR code scans}
-					\end{itemize}
 				\end{itemize}
 			}
 		\end{description} % End Education list
-		
+						
 		%%%%%%%%%%%%%%%%%%%%%%
 		\resheading{Experience}
 		\begin{description}
-					\item 
+			\item
+			\ressubheading{DRW}{Chicago, IL}
+			{Software Engineer -- Risk Management}{March 2019 -- Present}
+			{	
+				\footnotesize
+				\begin{itemize}
+					\resitem{Designing and implementing fault-tolerant, service-oriented fixed-income portfolio risk system using Python, Elixir, and Kubernetes}
+					\resitem{Redesigned and scaled derivatives risk analysis pipeline using a functional, reactive architecture implemented in Elixir, C++, and Kubernetes}
+				\end{itemize}
+			}
+			\item
+			\ressubheading{DRW}{Chicago, IL}
+			{Junior Software Developer -- Trading Infrastructure}{July 2018 -- March 2019}
+			{	
+				\footnotesize
+				\begin{itemize}
+					\resitem{Improved API response times of internal trade volume monitoring tool by 30x in Ruby on Rails}
+					\resitem{Implemented and integrated an LCH margin calculation tool into internal margin calculation framework to simulate portfolio margins under different market conditions using Clojure}
+				\end{itemize}
+			}
+			\item 
 			\ressubheading{DRW}{Chicago, IL}
 			{Software Engineering Intern}{June 2017 -- August 2017}
 			{	
 				\footnotesize
 				\begin{itemize}
-					\resitem{Provided insight into new trading strategies for options markets by building distributed data analysis frameworks and tools for traders using Python}
-					\resitem{Improved efficiency of trade capital monitoring system by writing Tableau Web Data Connectors and reverse proxies using JavaScript}
+					\resitem{Provided insight into new trading strategies for agriculture options markets by building data analysis tools and high-throughput backtesting pipelines for traders using Python, numpy, and pandas}
+					\resitem{Improved efficiency of trade capital monitoring system by writing Tableau Web Data Connectors using JavaScript and Flask}
 				\end{itemize}
 			}
 			\item 
@@ -120,67 +133,58 @@
 					\resitem{Improved speed and robustness of critical part of DDoS (Distributed Denial of Service) attack detection pipeline by architecting, developing, and optimizing DDoS analysis library using Python}
 					\resitem{Gained familiarity with Agile and scrum (Atlassian Jira), test-driven development, and continuous integration methodologies (Jenkins)}
 				\end{itemize}
-			}
-			\item 
-			\ressubheading{Northrop Grumman}{Arlington, VA}
-			{Extern}{May 2015 -- July 2015}
-			{	
-				\footnotesize
-				\begin{itemize}
-					\resitem{Simulated and evaluated packet scheduling schemes for content-centric networks using MATLAB}
-					\resitem{Gained experience with project management and leadership skills through coursework}
-				\end{itemize}
-			}
-			
-
-			
+			}						
 		\end{description}  % End Experience list
-		
-		\resheading{Projects}
-		
-		\begin{description}
-			\item[\href{https://github.com/achiwhane/Calculator}{Calculator:}] 
-				{
-					\footnotesize
-					A reverse Polish Notation calculator with graphing capabilities for iOS, written in Swift.
-				}
-			\item[\href{https://github.com/achiwhane/ReadHN}{ReadHN:}] 
-				{
-					\footnotesize
-					A Hacker News client for iOS, developed using Swift, Firebase, and AlamoFire.
-				}
-			\item[\href{https://github.com/achiwhane/playpong}{PongWithMe:}]
-				{
-					\footnotesize
-					A game of pong where players use their phones to control paddles on a screen. Won 1st Place for the Best Use of Microsoft Platforms at MHacks IV.
-				}
-				
-			\item[\href{https://github.com/achiwhane/ud851-Sunshine}{Sunshine:}]
-				{
-					\footnotesize
-					A full-featured weather app for Android, completed as part of the ``Developing for Android''  Udacity course.
-				}				
-		\end{description}
-		
-		%%%%%%%%%%%%%%%%%%%%%%
+						
 		\resheading{Skills}
 		\begin{description}
 			\item[Programming Languages:]
-				{	
-					\footnotesize
-					C++, C, Python, Java, Go, MATLAB, Swift
-				}
+			{	
+				\footnotesize
+				C++, C, Python, Scala, Go, MATLAB, Swift
+			}
 			\item[Frameworks/Technologies:]
-				{
-					\footnotesize
-					Django, Tornado, Flask, Redis, Jupyter Notebooks, scikit-learn, pandas, numpy, etcd, MySQL, PostgreSQL, slurm, Hadoop, MapReduce
-				}
+			{
+				\footnotesize
+				Django, Tornado, Flask, Redis, Jupyter Notebooks, scikit-learn, pandas, numpy, etcd, MySQL, PostgreSQL, slurm, Hadoop, MapReduce
+			}
 			\item[Languages:]
-				{
-					\footnotesize
-					English (Fluent), Marathi (Fluent)
-				}
+			{
+				\footnotesize
+				English (native fluency), Marathi (native fluency)
+			}
 		\end{description} % End Skills list
-		
-		
+				
+		\resheading{Projects}
+		\begin{description}
+			\item[VideoCDN:]
+			{
+				\footnotesize
+				A HTTP proxy and CDN optimized for video streaming with adaptive bitrate selection and load-balancing, written in C++
+			}
+			\item[StaticRouter:]
+			{
+				\footnotesize
+				Designed and implemented a static router with an implementation of ARP and ICMP, written in C++
+			\item[ShardKV:]
+			{
+				\footnotesize
+				A scalable, sharded key-value store backed by Paxos, written in Go
+			}
+
+			}
+			\item[PongWithMe:]
+			{
+				\footnotesize
+				A game of pong where players use their phones to control paddles on a screen. Won 1st Place for the Best Use of Microsoft Platforms at MHacks IV
+			}
+							
+			\item[Spar:]
+			{
+				\footnotesize
+				An async programming library written in Scala
+			}				
+		\end{description}
+						
+						
 \end{document}
