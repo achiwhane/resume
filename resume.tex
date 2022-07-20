@@ -1,4 +1,5 @@
 % resume.tex
+% !TEX root = ./resume.tex
 %
 % (c) 2002 Matthew Boedicker <mboedick@mboedick.org> (original author) http://mboedick.org
 % (c) 2003 David J. Grant <dgrant@ieee.org> http://www.davidgrant.ca
@@ -74,9 +75,29 @@
 		\vspace{0.1in}}
 						
 		\mywebheader
-						
-
-						
+		%%%%%%%%%%%%%%%%%%%%%%
+		\resheading{Education}
+		\begin{description}
+			\item
+			\ressubheading{{University of Michigan}}{Ann Arbor, MI}{B.S.E in Computer Science}{September 2014 -- April 2018}
+			{ \footnotesize
+				\begin{itemize}
+					\resitem{\textbf{Key Courses:}
+						System Design in C++,
+						Distributed Systems,
+						Operating Systems, 
+						Networks,
+						Web Databases \& Information Systems,
+						Machine Learning,
+						Artificial Intelligence,
+						Computer Organization,
+						Data Structures and Algorithms,
+						Linear Algebra,
+						Probability
+					}
+				\end{itemize}
+			}
+		\end{description} % End Education list
 		%%%%%%%%%%%%%%%%%%%%%%
 		\resheading{Experience}
 		\begin{description}
@@ -86,9 +107,11 @@
 			{	
 				\footnotesize
 				\begin{itemize}
-					\resitem{Enabled more flexible and efficient user workflows through designing and implementing conflict-free, eventually-consistent, real-time replication infrastructure, client services, and developer SDKs (Go, FoundationDB, Kubernetes, NixOS)}
-					\resitem{Built real-time messaging system to seamlessly interface and communicate with multiple military data links and communication systems (Go, Kubernetes)}
-					
+					\resitem{Core maintainer of Flux-KV, Anduril's distributed database that functions as a real-time replicated eventually-consistent key-value store backed by conflict-free replicated datatypes (Go, FoundationDB, Kubernetes, NixOS)}
+					\resitem{Refined and enabled core use cases by leveraging distributed data types (Go)}
+					\resitem{Built SDK and internal tooling on top of Flux-KV to onboard external use cases from other teams (Go)}
+					\resitem{Drove key demo and production milestones by designing real-time messaging system to seamlessly interface and communicate with multiple military communication systems (Go, Kubernetes)}
+					\resitem{Defined best practices, rules of engagment, project planning process, and code review process for team (Github Projects, Jira)}
 				\end{itemize}
 			}
 			\item
@@ -99,7 +122,7 @@
 				\begin{itemize}
 					\resitem{Enabled novel, real-time analysis and event detection workflows by designing and implementing real-time derivatives risk decomposition system  (Python, Elixir, Kubernetes)}
 					\resitem{Redesigned and scaled existing settlement risk analysis pipeline using a functional, reactive architecture (Elixir, C++, Kubernetes)}
-					\resitem{Managed and mentored apprentice to successfully deliver greenfield services from initial concept to production deployment (Elixir, Kubernetes) }
+					\resitem{Managed and mentored apprentice to successfully deliver greenfield services from initial concept to production deployment (Elixir, Kubernetes)}
 				\end{itemize}
 			}
 			\item
@@ -153,28 +176,6 @@
 			}
 		\end{description} % End Skills list		
 		%%%%%%%%%%%%%%%%%%%%%%
-		\resheading{Education}
-		\begin{description}
-			\item
-			\ressubheading{{University of Michigan}}{Ann Arbor, MI}{B.S.E in Computer Science}{September 2014 -- April 2018}
-			{ \footnotesize
-				\begin{itemize}
-					\resitem{\textbf{Key Courses:}
-						System Design in C++,
-						Distributed Systems,
-						Operating Systems, 
-						Networks,
-						Web Databases \& Information Systems,
-						Machine Learning,
-						Artificial Intelligence,
-						Computer Organization,
-						Data Structures and Algorithms,
-						Linear Algebra,
-						Probability
-					}
-				\end{itemize}
-			}
-		\end{description} % End Education list
 						
 						
 \end{document}
